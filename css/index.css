@@ -1,3 +1,21 @@
 .navbar-brand {
     display: block;
 }
+
+.stady  {
+    color: wheat;
+    text-align: center;
+    background: rgb(121, 98, 88);
+}
+
+footer {
+   text-align: center;
+   background: rgb(121, 98, 88);
+}
+
+.logo {
+    width: 80px;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+}
