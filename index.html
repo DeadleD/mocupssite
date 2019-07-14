@@ -87,30 +87,30 @@
       </section>
     </main>
     <footer class="container">
-        <div id="record" style="border">
+        <div id="record">
            <h1>Запис на пробне заняття</h1>
-           <form method="POST" action="https://formspree.io/defikpro@gmail.com">
-            <label>Ім'я:
-                <input type="text" name="ім'я" placeholder="ім'я" required>
-            </label>
-            <br>
-            <label>Прізвище:
-                <input type="text" name="прізвище" placeholder="прізвище" required>
-            </label>
-            <br>
-            <label>Номер телефону:
-                <input type="text" name="Номер телефону" placeholder="Номер телефону" required>
-            </label>
-            <br>
-            <label>Стать</label>
-            <label>
-                <input type="radio" name="стать" value="Жінка">Жінка
-            </label>
-            <label>
-                <input type="radio" name="стать" value="Чоловік">Чоловік
-            </label><br>
+            <form action="https://formspree.io/defikpro@gmail.com" method="POST">
+             <label>Ім'я:
+                   <input type="text" name="name" placeholder="ім'я" required>
+             </label>
+             <br>
+             <label>Прізвище:
+                   <input type="text" name="text" placeholder="прізвище" required>
+             </label>
+             <br>
+             <label>Номер телефону:
+                   <input type="text" name="number" placeholder="Номер телефону" required>
+             </label>
+             <br>
+             <label>Стать</label>
+             <label>
+                   <input type="radio" name="gender" value="Жінка">Жінка
+             </label>
+             <label>
+                   <input type="radio" name="gender" value="Чоловік">Чоловік
+             </label><br>
              <input type="reset">
-             <input type="submit"><br>
+             <input type="submit">
            </form>
         </div>
         <div id="contacts">
@@ -137,6 +137,7 @@
             <span>&copy Сopyright 2019</span>
         </div>
     </footer>
+    <script src = "js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
