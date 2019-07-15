@@ -1,16 +1,19 @@
 const text = document.querySelector('textarea');
 
-document.querySelector('input[type=submit]')
-  .addEventListener('click', saveText);
+const save = document.querySelector('.form_save');
+const load = document.querySelector('.form_load');
 
-document.querySelector('.load')
-  .addEventListener('click', loadText);
+save.addEventListener('click', saveText);
+load.addEventListener('click', loadText);
 
-function saveText(e) {
-  e.preventDefault();
-  localStorage['text'] = text.value;
+load.addEventListener('click', loadText);
+
+function saveText(txt){
+    txt.preventDefault();
+    localStorage['text'] = text.value + ', ' + name.value + ', ' +
+        lastName.value + ', ' + email.value + ', ' + phoneNumber.value;
 }
 
-function loadText() {
-  text.value = localStorage['text'] || '';
+function loadText(){
+    text.value = localStorage['text'] || '';
 }
